@@ -1,0 +1,398 @@
+.main-header{
+  flex-direction: column;
+  height: auto;
+
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  background-color:white;
+  z-index: 10000;
+
+}
+
+.header-1{
+  height: 56px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+
+.left-section{
+  display: flex;
+  width: 235px;
+  margin-left: 23px;
+}
+
+.hamburger-menu{
+  height: 45px;
+  width: 45px;
+  border-color: white;
+  border-style: solid;
+  border-radius: 50%;
+  background-color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  margin-top: 8px;
+  padding: 0;
+  margin-left: -10px;
+}
+
+.hamburger-menu-logo{
+  height: 25px;
+  /*margin-top: 16px;
+  border-radius: 50%;*/
+  transition: 0.15; 
+}
+
+.hamburger-menu:hover{
+  background-color: rgb(220, 220, 220);
+}
+
+.youtube-logo{
+  height: 20px;
+  margin-left: 12px;
+  margin-top: 19px;
+  width: 100px;
+  cursor: pointer;
+}
+
+.middle-section{
+  
+  flex: 1;
+  margin-left: 70px;
+  margin-right: 35px;
+  max-width: 640px;
+  display: flex;
+  margin-top: 8px;
+  margin-left: 19px;
+}
+
+.search-bar{
+  height: 38px;
+  border-radius: 20px;
+  border-color: rgb(211, 211, 211);
+  border-style: solid;
+  border-width: 1px;
+  cursor: text;
+  display: flex;
+  flex: 1;
+  padding-left: 10px;
+  font-size: 16px;
+  box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
+  border-right: none;
+  border-top-right-radius: 0%;
+  border-bottom-right-radius: 0%;
+  width: 140px;
+}
+
+.search-bar::placeholder{
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 16px;
+}
+
+.search-button{
+  height:41.5px;
+  width: 65px;
+  background-color: rgb(248, 248, 248);
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-color: rgb(211, 211, 211);
+  border-style: solid;
+  border-width: 1px;
+  margin-right: 10px;
+  min-width: 65px;
+
+  position: relative;
+}
+
+.search-button .tooltip{
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  border-color: black;
+  border-style: solid;
+  border-width: 1px ;
+  color: black;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 7px;
+  padding-right: 7px;
+  font-size: 12px;
+
+  opacity: 0;
+  z-index: 9000;
+  transition: opacity 0.15s;
+  pointer-events: none;
+  white-space: nowrap;
+  bottom: -23px;
+  right: -15px;
+  transition: 0.15;
+}
+
+.search-button:hover .tooltip{
+  opacity: 0.8;
+}
+
+.search-button:hover{
+  background-color: rgb(238, 238, 238);
+}
+
+.search-button:active{
+  background-color: rgb(238, 238, 238);
+}
+
+.search-icon{
+  height: 25px;
+  width: 25px;
+  margin-top: 3px;
+}
+
+.voice-search-button{
+  height: 41.5px;
+  width: 41.5px;
+  border-radius: 50%;
+  border-color: white;
+  border-style: solid;
+  border-width: 1px;
+  
+  transition: 0.15;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.voice-search-button .tooltip{
+  position: absolute;
+  background-color: rgb(87, 84, 84);
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius: 4px;
+  font-size: 12px;
+
+  bottom: -40px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.voice-search-button:hover .tooltip{
+  opacity: 0.8;
+}
+
+.voice-search-icon{
+  width:25px ;
+
+}
+
+.voice-search-button:hover{
+  background-color: rgb(228, 228, 228);
+}
+
+.right-section{
+  width: 230px;
+  display: flex;
+  justify-content:flex-end;
+  flex-shrink: 0;
+}
+
+.create-button{
+  height: 37px;
+  width: 95px;
+  display: inline-flex;
+  border-radius: 20px;
+  border-color: white;
+  border-style: solid;
+  border-width: 1px;
+  margin-top: 10px;
+  transition: 0.15;
+}
+
+.create-button:hover{
+  background-color: rgb(228, 228, 228);
+}
+
+.create-plus-icon{
+  height: 30px;
+  width: 20px;
+  align-self: center;
+  margin-left: 5px;
+}
+
+.create-span{
+  font-family: Roboto, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  align-self: center;
+  margin-left: 5px;
+}
+
+.notifications-button{
+  height: 38px;
+  width: 38px;
+  border-radius: 50%;
+  margin-top: 10px;
+  transition: 0.15;
+  border-color: white;
+  border-style: solid;
+  background-color: white;
+  margin-left: 15px;
+  
+  transition: 0.15;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+
+.notifications-button .tooltip{
+  position: absolute;
+  background-color: rgb(87, 84, 84);
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius: 4px;
+  font-size: 12px;
+
+  bottom: -43px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.notifications-button:hover .tooltip{
+  opacity: 0.8;
+}
+
+.notifications-icon{
+  height: 25px;
+  width: 25px;
+  margin-top: 4px;
+  align-self: center;
+  margin-left: -1px;
+}
+
+.notifications-button:hover{
+  background-color: rgb(228, 228, 228);
+}
+
+.notifications-count{
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 12px;
+  color: white;
+  background-color: rgb(222, 29, 29);
+
+  position: absolute;
+  top: 12px;
+  right: 75px;
+
+  padding-left: 4px;
+  padding-right: 4px;
+  border-radius: 10px;
+
+}
+
+.profile-picture{
+  height: 38px;
+  width: 38px;
+  border-radius: 50%;
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.header-2{
+  height: 64px;
+
+  overflow-x: auto;
+  white-space: nowrap;
+
+  margin-top: 15px;
+  margin-left: 90px;;
+
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;     /* Firefox */
+
+  -webkit-overflow-scrolling: touch; /* iOS smooth scrolling */
+}
+
+.header-2::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+.button-9-formula-1{
+  background-color: black;
+  border-style: solid;
+  border-radius: 8px;
+
+  color:white;
+
+  min-height: 33px;
+
+  padding-left: 10px;
+  padding-right: 10px;
+
+  margin-right: 10px;
+
+  font-family: Roboto, Arial, sans-serif;
+  font-weight: 500;
+}
+
+
+.button-1,
+.button-2,
+.button-3,
+.button-4,
+.button-5,
+.button-6,
+.button-7,
+.button-8,
+.button-10,
+.button-11,
+.button-12,
+.button-13,
+.button-14{
+  background-color: rgb(239, 236, 236);
+  border-color: transparent;
+  border-radius: 8px;
+
+  min-height: 33px;
+
+  padding-left: 10px;
+  padding-right: 10px;
+
+  margin-right: 10px;
+
+  font-family: Roboto, Arial, sans-serif;
+  font-weight: 500;
+
+  transition: 0.15s;
+}
+
+
+.button-1:hover,
+.button-2:hover,
+.button-3:hover,
+.button-4:hover,
+.button-5:hover,
+.button-6:hover,
+.button-7:hover,
+.button-8:hover,
+.button-10:hover,
+.button-11:hover,
+.button-12:hover,
+.button-13:hover,
+.button-14:hover{
+  background-color: rgb(220, 220, 220);
+}
